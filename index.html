@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailwindCSS Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <!-- Navigation Section -->
+    <nav class="navbar">
+      <!-- Navbar Logo -->
+      <div class="navbar_logo">
+        <p>
+          <a href=""><span class="logo_less_than">&lt</span>Mo<span
+              class="logo_t">T</span>uN<span
+              class="logo_forward_slash">/</span><span
+              class="logo_greater_than">&gt</span></a>
+        </p>
+      </div>
+      <!-- Navbar Menu Items -->
+      <ul class="navbar_menuitems">
+        <li><a href="#">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/work.html">Work</a></li>
+        <li><a href="/resume.html">Resume</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="bg-slate-800 p-96">
+    <!-- Hero Section -->
+    <section class="hero_section">
+      <!-- Hero Introduction Section -->
+      <div class="intro_section">
+        <!-- Social Media Links -->
+        <div class="social_media_links">
+          <div><a href="https://github.com/motunmarteen"
+              target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a></div>
+          <div><a href="https://twitter.com/MotunMarteen"
+              target="_blank">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a></div>
+          <div><a href="https://www.linkedin.com/in/motunmarteen/"
+              target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a></div>
+          <div><a href="https://www.instagram.com/motunmarteen/"
+              target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a></div>
+          <div><a href="https://web.facebook.com/MotunMarteen/"
+              target="_blank">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a></div>
+        </div>
+        <!-- Name Introduction -->
+        <div class="name_intro">
+          <h1 class="text-center text-white">I am Motun Marteen</h1>
+        </div>
+        <!-- Experience Introduction -->
+        <div class="experience_intro">
+          <p>A Software Engineer with Javascript and Python working
+            Experience</p>
+        </div>
+        <!-- Portfolio Links -->
+        <div class="portfolio_youtube_links">
+          <div class="portfolio">
+            <p><a
+                href="https://github.com/motunmarteen?tab=repositories"
+                target="_blank">My Portfolio</a></p>
+          </div>
+        </div>
+      </div>
+      <!-- Hero Section Image-->
+      <div class="hero_section_image">
+        <img
+          src="/images/Default_close_portrait_image_of_a_very_hansome_black_man_in_sm_2_838dbd9b-d073-442d-9779-c2bbdb78e01b_0.png"
+          alt="A black man in Smart Casual wears" width="85%">
+      </div>
+    </section>
+    <!-- Services Section -->
+    <section class="flex flex-col text-white">
+      <!-- Services Header -->
+      <div class="services_header">
+        <h4>SERVICES</h4>
+        <h2>My Services</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Repellendus quo <br> voluptatum facilis atque, sint quae
+          adipisci in.</p>
+        <hr>
+      </div>
+      <!-- Services Information Items -->
+      <div class="services_info_items">
+        <div class="services_info_item">
+          <div class="services_icon">
+            <ion-icon name="logo-web-component"></ion-icon>
+          </div>
+          <div class="services_info_header">Web Development</div>
+          <div class="services_details">Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Consectetur voluptate
+            architecto saepe non.</div>
+        </div>
+        <div class="services_info_item">
+          <div class="services_icon">
+            <ion-icon name="create-outline"></ion-icon>
+          </div>
+          <div class="services_info_header">Web Design</div>
+          <div class="services_details">Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Mollitia in dignissimos eos
+            non.</div>
+        </div>
+        <div class="services_info_item">
+          <div class="services_icon">
+            <ion-icon name="videocam-outline"></ion-icon>
+          </div>
+          <div class="services_info_header">Video Editing</div>
+          <div class="services_details">Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Tempore, dicta. Praesentium,
+            omnis impedit.</div>
+        </div>
+        <div class="services_info_item">
+          <div class="services_icon">
+            <ion-icon name="camera-outline"></ion-icon>
+          </div>
+          <div class="services_info_header">Photography</div>
+          <div class="services_details">Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Totam consequuntur fugiat
+            suscipit aliquam?</div>
+        </div>
+        <div class="services_info_item">
+          <div class="services_icon">
+            <ion-icon name="code-working-outline"></ion-icon>
+          </div>
+          <div class="services_info_header">App Developing</div>
+          <div class="services_details">Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Exercitationem qui
+            perspiciatis ea incidunt.</div>
+        </div>
+        <div class="services_info_item">
+          <div class="services_icon">
+            <ion-icon name="search-outline"></ion-icon>
+          </div>
+          <div class="services_info_header">SEO Expert</div>
+          <div class="services_details">Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Quod possimus dignissimos
+            aperiam sunt!</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer Section -->
+  <footer
+    class="flex flex-col gap-10 justify-center items-center bg-gray-900 text-white p-96">
+    <!-- Footer Logo -->
+    <div class="footer_logo">
+      <p>
+        <a href=""><span class="logo_less_than">&lt</span>Mo<span
+            class="logo_t">T</span>uN<span
+            class="logo_forward_slash">/</span><span
+            class="logo_greater_than">&gt</span></a>
+      </p>
+    </div>
+    <!-- Footer Information -->
+    <div class="footer_info">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Voluptatibus dicta et optio, maiores nam similique placeat
+        <br> libero nihil, eos itaque repellendus sequi quae harum ab,
+        odit ex. Quibusdam, corporis reiciendis? Illo veritatis autem,
+        sint fugit minus nisi <br> sit doloremque consequuntur?</p>
+    </div>
+    <!-- Footer Social Media Links -->
+    <div class="footer_socials">
+      <div class="footer_social"><a
+          href="https://github.com/motunmarteen" target="_blank">
+          <ion-icon name="logo-github"></ion-icon>
+        </a></div>
+      <div class="footer_social"><a
+          href="https://twitter.com/MotunMarteen" target="_blank">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></div>
+      <div class="footer_social"><a
+          href="https://www.linkedin.com/in/motunmarteen/"
+          target="_blank">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></div>
+      <div class="footer_social"><a
+          href="https://www.instagram.com/motunmarteen/"
+          target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></div>
+      <div class="footer_social"><a
+          href="https://web.facebook.com/MotunMarteen/"
+          target="_blank">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></div>
+    </div>
+  </footer>
+  <script type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
+  </script>
+  <script nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js">
+  </script>
+</body>
+</html>
