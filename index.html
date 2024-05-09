@@ -3,176 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marteen Motun Mubaraq - Home</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <title>Motun Marteen Mubarak</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily:{
+            subscript:['Inconsolata', 'san-serif'],
+          },
+
+          colors: {
+            clifford: '#da373d',
+            primaryColor: 'WHITE',
+            secondaryColor:'blue',
+            },
+            animation: {
+  wiggle: 'wiggle 1s ease-in-out infinite',
+},
+keyframes: {
+  wiggle: {
+    '0%, 100%': { transform: 'rotate(-10deg)' },
+    '50%': { transform: 'rotate(10deg)' },
+  },
+},
+        },
+      },
+    };
+  </script>
 </head>
 <body>
-    
-    <!-- Header Section -->
-    <header class="header">
+    <div class="w-full p-4">
+      <nav class="flex justify-between mr-10">
+        <h3 class="ml-10 text-sm capitalize hover:animate-wiggle hover:text-secondaryColor">Marteen Motun Mubarak</h3>
+        <ion-icon class="cursor-pointer ml-15 md:hidden " name="menu-outline" id="burger"></ion-icon>
+        <div class="hidden max-w-screen-sm:block  md:flex " id="menu">
+            <div class="ml-10 text-sm capitalize font-subscript cursor-pointer hover:animate-wiggle hover:text-secondaryColor">Home</div>
+            <div class="ml-10 text-sm capitalize font-subscript cursor-pointer hover:animate-wiggle hover:text-secondaryColor">About</div>
+            <div class="ml-10 text-sm capitalize font-subscript cursor-pointer hover:animate-wiggle hover:text-secondaryColor">Skills</div>
+            <div class="ml-10 text-sm capitalize font-subscript cursor-pointer hover:animate-wiggle hover:text-secondaryColor">Project</div>
+            <div class="ml-10 text-sm capitalize font-subscript cursor-pointer hover:animate-wiggle hover:text-secondaryColor">Contact</div>
+        </div>
+    </nav>
+       
+    </div>
+    <!--main section-->
+    <div id="home"class="w-full h-[50vh] text-center mt-20">
+        <div class="max-w[1240px] w-full mx-auto p-2 flex justify-center items-center">
+            <div>
+                <p class="uppercase text-sm text-gray-600">It's great to have you here😊</p>
+                <h2 class="py-4 text-gray-400 text-lg">Hi, I am <span>Motun</span></h2>
+                <h2 class="py-2 text-gray-700">A Full-Stack Web Developer</h2>
+                <p class="py-4 text-sm text-gray-600 max-w[70%] m-auto">i am full stack developer with very good knowledge in building web application</p>
 
-        <!-- Navigation Section -->
-        <nav class="navbar">
+                <!--icon connection section-->
+                <div class="flex items-center justify-between m-auto max-w-screen-sm: mx-10">
+                    <div class="rounded-full shadow-lg shadow-gray-600 p-6 cursor-pointer hover:scale-105 ease-in duration-300"><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></div>
+                    <div class="rounded-full shadow-lg shadow-gray-600 p-6 cursor-pointer hover:scale-105 ease-in duration-300"><a href=""><ion-icon name="logo-facebook"></ion-icon></a></div>
+                    <div class="rounded-full shadow-lg shadow-gray-600 p-6 cursor-pointer hover:scale-105 ease-in duration-300"><a href=""><ion-icon name="logo-instagram"></ion-icon></a></div>
+                    <div class="rounded-full shadow-lg shadow-gray-600 p-6 cursor-pointer hover:scale-105 ease-in duration-300"><a   href=""><ion-icon name="logo-whatsapp"></ion-icon></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+          <!-- Content Section -->
 
-            <!-- Navbar Logo -->
-            <div class="navbar_logo">
+          <div class="max-w-screen-sm:grid grid-cols-1 mx-10 max-w-[1240px] m-auto grid grid-cols-1 md:grid-cols-3 gap-8 ">
+            <div class="md:col-span-2">
                 <p>
-                    <a href=""><span class="logo_less_than">&lt</span>Mo<span class="logo_t">T</span>uN<span class="logo_forward_slash">/</span><span class="logo_greater_than">&gt</span></a>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic veritatis quas laborum similique voluptatem non eum quos dolore, tempora aperiam, explicabo enim veniam repellat? Qui ipsum nam earum officiis soluta minima quibusdam mollitia velit adipisci tenetur ducimus quae ea in animi fugit omnis eveniet cumque sapiente numquam atque, iure beatae! Mollitia beatae assumenda facere rem nisi hic sed numquam iste. Accusantium vero reprehenderit molestias id? Impedit error laboriosam nostrum ducimus vero optio recusandae laudantium exercitationem deleniti iste, dolorum nam unde eius earum reiciendis nulla, voluptatibus laborum est, nobis natus maxime. <span>Iure tempora voluptatibus cumque aliquam architecto. Sapiente perferendis iure dolores!</span>
                 </p>
             </div>
-
-            <!-- Navbar Menu Items -->
-            <ul class="navbar_menuitems">
-                <li><a href="#">Home</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/work.html">Work</a></li>
-                <li><a href="/resume.html">Resume</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="main_page">
-        <!-- Hero Section -->
-        <section class="hero_section">
-
-            <!-- Hero Introduction Section -->
-            <div class="intro_section">
-
-                <!-- Social Media Links -->
-                <div class="social_media_links">
-                    <div><a href="https://github.com/motunmarteen" target="_blank">
-                        <ion-icon name="logo-github"></ion-icon>
-                    </a></div>
-                    <div><a href="https://twitter.com/MotunMarteen" target="_blank">
-                        <ion-icon name="logo-twitter"></ion-icon>
-                    </a></div>
-                    <div><a href="https://www.linkedin.com/in/motunmarteen/" target="_blank">
-                        <ion-icon name="logo-linkedin"></ion-icon>
-                    </a></div>
-                    <div><a href="https://www.instagram.com/motunmarteen/" target="_blank">
-                        <ion-icon name="logo-instagram"></ion-icon>
-                    </a></div>
-                    <div><a href="https://web.facebook.com/MotunMarteen/" target="_blank">
-                        <ion-icon name="logo-facebook"></ion-icon>
-                    </a></div>
-                </div>
-
-                <!-- Name Introduction -->
-                <div class="name_intro">
-                    <h1>I am Motun Marteen</h1>
-                </div>
-
-                <!-- Experience Introduction -->
-                <div class="experience_intro">
-                    <p>A Software Engineer with Javascript and Python working Experience</p>
-                </div>
-
-                <!-- Portfolio Links -->
-                <div class="portfolio_youtube_links">
-                    <div class="portfolio">
-                        <p><a href="https://github.com/motunmarteen?tab=repositories" target="_blank">My Portfolio</a></p>
-                    </div>
-                </div>
+            <div class="max-w-screen-sm:grid grid-cols-1 mx-10 w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 duration-300">
+                <img src="/images/Marteen Motun Mubaraq.jpg" alt="Image of a house" width="200px" height="200px">
             </div>
-
-            <!-- Hero Section Image-->
-            <div class="hero_section_image">
-                <img src="/images/Default_close_portrait_image_of_a_very_hansome_black_man_in_sm_2_838dbd9b-d073-442d-9779-c2bbdb78e01b_0.png" alt="A black man in Smart Casual wears" width="85%">
+            <div class="md:col-span-2">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim soluta deleniti quibusdam ipsum dolorum repellendus, nulla laborum at ut vero quia. Corrupti cupiditate consectetur deleniti consequatur voluptatibus neque similique debitis veritatis. Sunt nulla repellendus neque, reprehenderit saepe obcaecati numquam repudiandae placeat voluptatum pariatur error impedit iure labore, debitis unde minus nemo. Nisi ratione odio veniam nemo voluptas quo a? Nobis animi optio corrupti, omnis esse soluta repudiandae quam enim quis veniam quaerat odit. Sed impedit ipsa molestias harum adipisci, deserunt fugit blanditiis. Recusandae, atque laboriosam! Hic veniam maxime reprehenderit voluptatum aperiam minima quos a laboriosam fuga, eveniet repudiandae eius quam.</p>
             </div>
-        </section>
-
-        <!-- Services Section -->
-        <section class="services">
-
-            <!-- Services Header -->
-            <div class="services_header">
-                <h4>SERVICES</h4>
-                <h2>My Services</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus quo <br> voluptatum facilis atque, sint quae adipisci in.</p>
-                <hr>
+            <div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim soluta deleniti quibusdam ipsum dolorum repellendus, nulla laborum at ut vero quia. Corrupti cupiditate consectetur deleniti consequatur voluptatibus neque similique debitis veritatis. Sunt nulla repellendus neque, reprehenderit saepe obcaecati numquam repudiandae placeat voluptatum pariatur error impedit iure labore, debitis unde minus nemo. Nisi ratione odio veniam nemo voluptas quo a? Nobis animi optio corrupti, omnis esse soluta repudiandae quam enim quis veniam quaerat odit. Sed impedit ipsa molestias harum adipisci, deserunt fugit blanditiis. Recusandae, atque laboriosam! Hic veniam maxime reprehenderit voluptatum aperiam minima quos a laboriosam fuga, eveniet repudiandae eius quam.</p>
             </div>
-            
-            <!-- Services Information Items -->
-            <div class="services_info_items">
-                <div class="services_info_item">
-                    <div class="services_icon"><ion-icon name="logo-web-component"></ion-icon></div>
-                    <div class="services_info_header">Web Development</div>
-                    <div class="services_details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptate architecto saepe non.</div>
-                </div>
-
-                <div class="services_info_item">
-                    <div class="services_icon"><ion-icon name="create-outline"></ion-icon></div>
-                    <div class="services_info_header">Web Design</div>
-                    <div class="services_details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia in dignissimos eos non.</div>
-                </div>
-
-                <div class="services_info_item">
-                    <div class="services_icon"><ion-icon name="videocam-outline"></ion-icon></div>
-                    <div class="services_info_header">Video Editing</div>
-                    <div class="services_details">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, dicta. Praesentium, omnis impedit.</div>
-                </div>
-
-                <div class="services_info_item">
-                    <div class="services_icon"><ion-icon name="camera-outline"></ion-icon></div>
-                    <div class="services_info_header">Photography</div>
-                    <div class="services_details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat suscipit aliquam?</div>
-                </div>
-
-                <div class="services_info_item">
-                    <div class="services_icon"><ion-icon name="code-working-outline"></ion-icon></div>
-                    <div class="services_info_header">App Developing</div>
-                    <div class="services_details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem qui perspiciatis ea incidunt.</div>
-                </div>
-
-                <div class="services_info_item">
-                    <div class="services_icon"><ion-icon name="search-outline"></ion-icon></div>
-                    <div class="services_info_header">SEO Expert</div>
-                    <div class="services_details">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod possimus dignissimos aperiam sunt!</div>
-                </div>
+            <div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim soluta deleniti quibusdam ipsum dolorum repellendus, nulla laborum at ut vero quia. Corrupti cupiditate consectetur deleniti consequatur voluptatibus neque similique debitis veritatis. Sunt nulla repellendus neque, reprehenderit saepe obcaecati numquam repudiandae placeat voluptatum pariatur error impedit iure labore, debitis unde minus nemo. Nisi ratione odio veniam nemo voluptas quo a? Nobis animi optio corrupti, omnis esse soluta repudiandae quam enim quis veniam quaerat odit. Sed impedit ipsa molestias harum adipisci, deserunt fugit blanditiis. Recusandae, atque laboriosam! Hic veniam maxime reprehenderit voluptatum aperiam minima quos a laboriosam fuga, eveniet repudiandae eius quam.</p>
             </div>
-        </section>
-    </main>
-    
-    <!-- Footer Section -->
-    <footer class="footer_section">
-
-        <!-- Footer Logo -->
-        <div class="footer_logo">
-            <p>
-                <a href=""><span class="logo_less_than">&lt</span>Mo<span class="logo_t">T</span>uN<span class="logo_forward_slash">/</span><span class="logo_greater_than">&gt</span></a>
-            </p>
+            <div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim soluta deleniti quibusdam ipsum dolorum repellendus, nulla laborum at ut vero quia. Corrupti cupiditate consectetur deleniti consequatur voluptatibus neque similique debitis veritatis. Sunt nulla repellendus neque, reprehenderit saepe obcaecati numquam repudiandae placeat voluptatum pariatur error impedit iure labore, debitis unde minus nemo. Nisi ratione odio veniam nemo voluptas quo a? Nobis animi optio corrupti, omnis esse soluta repudiandae quam enim quis veniam quaerat odit. Sed impedit ipsa molestias harum adipisci, deserunt fugit blanditiis. Recusandae, atque laboriosam! Hic veniam maxime reprehenderit voluptatum aperiam minima quos a laboriosam fuga, eveniet repudiandae eius quam.</p>
+            </div>
+            <div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim soluta deleniti quibusdam ipsum dolorum repellendus, nulla laborum at ut vero quia. Corrupti cupiditate consectetur deleniti consequatur voluptatibus neque similique debitis veritatis. Sunt nulla repellendus neque, reprehenderit saepe obcaecati numquam repudiandae placeat voluptatum pariatur error impedit iure labore, debitis unde minus nemo. Nisi ratione odio veniam nemo voluptas quo a? Nobis animi optio corrupti, omnis esse soluta repudiandae quam enim quis veniam quaerat odit. Sed impedit ipsa molestias harum adipisci, deserunt fugit blanditiis. Recusandae, atque laboriosam! Hic veniam maxime reprehenderit voluptatum aperiam minima quos a laboriosam fuga, eveniet repudiandae eius quam.</p>
+            </div>
         </div>
-
-        <!-- Footer Information -->
-        <div class="footer_info">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dicta et optio, maiores nam similique placeat <br> libero nihil, eos itaque repellendus sequi quae harum ab, odit ex. Quibusdam, corporis reiciendis? Illo veritatis autem, sint fugit minus nisi <br> sit doloremque consequuntur?</p>
-        </div>
-
-        <!-- Footer Social Media Links -->
-        <div class="footer_socials">
-            <div class="footer_social"><a href="https://github.com/motunmarteen" target="_blank">
-                <ion-icon name="logo-github"></ion-icon>
-            </a></div>
-            <div class="footer_social"><a href="https://twitter.com/MotunMarteen" target="_blank">
-                <ion-icon name="logo-twitter"></ion-icon>
-            </a></div>
-            <div class="footer_social"><a href="https://www.linkedin.com/in/motunmarteen/" target="_blank">
-                <ion-icon name="logo-linkedin"></ion-icon>
-            </a></div>
-            <div class="footer_social"><a href="https://www.instagram.com/motunmarteen/" target="_blank">
-                <ion-icon name="logo-instagram"></ion-icon>
-            </a></div>
-            <div class="footer_social"><a href="https://web.facebook.com/MotunMarteen/" target="_blank">
-                <ion-icon name="logo-facebook"></ion-icon>
-            </a></div>
-        </div>
-    </footer>
-
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/index.js"></script>
 </body>
 </html>
